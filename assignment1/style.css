@@ -4,12 +4,22 @@
 }
 
 .navbar{
-      display: flex;
-      flex-direction: row;
-      align-items: start;
-      justify-content: space-between;
-      margin: 1em 2em;
-      position: sticky;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color:white;
+    border: 0px solid;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    padding: 15px;
+    box-shadow: 2px;
+    
+      
+}
+
+.navbar div{
+    margin-right: 30px;
 }
 
 .navbar a{
@@ -24,32 +34,61 @@
      color: black;
 
 }
+
+
 .content{
     position: relative;
-    text-align: center;
+    /* text-align: center; */
 }
 
 .content-tag{
          
     position: absolute;
     top: 50%;
-    left: 50%;
+    left: 40%;
       
 }
-.content-tag span{
-    color: aliceblue;
-    width: 100px;
-}
+
 .content-tag span b{
-      background-color: rgb(59, 52, 52);
-      width: 100px;
+    background-color:black;
+    opacity: 0.75;
+    padding: 15px;
+    font-size: 30px;
+    letter-spacing: 2px;
 }
+
+.content-tag span{
+    font-weight: 100;
+    font-size: 30px;
+    font-family: Verdana, sans-serif;
+     letter-spacing: 4px;
+     color: white;
+
+}
+
+
+#project-title {
+    padding: 3%;
+    
+}
+#project-title p{
+    font-size: 20px;
+    margin: 30px;
+}
+#project-title hr{
+     
+       opacity: 0.15;
+
+}
+
+
 
 .projects{
    
     display: flex;
-    align-items: center;
-    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;   
+    justify-content: space-evenly;
  
 }
 
@@ -71,6 +110,20 @@
     margin-top: 0%;
 } 
 
+
+
+.about-title{
+     padding: 50px;
+    
+}
+
+.about-title h3{
+    font-size: 25px;
+    font-weight: 100;
+}
+
+
+
 .about{
     display: flex;
     justify-content: space-between;
@@ -90,5 +143,16 @@
 .person-detail button{
       
       padding: 0.5em 9.5em;
+      border: 0px;
 
+}
+
+.Contact{
+    width: 80%;   
+    text-align: center;
+}
+.inp{
+      width: 100%;
+      margin: 10px;
+      padding: 10px;
 }
