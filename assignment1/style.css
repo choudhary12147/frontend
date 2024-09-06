@@ -147,12 +147,41 @@
 
 }
 
-.Contact{
-    width: 80%;   
-    text-align: center;
+.contact-section{
+     padding: 32px 16px;
 }
+
+h3{
+    padding: 16px 0;
+    margin: 10px 0;
+    font-size: 24px;
+    font-family: 'Segoe UI', Arial,sans-serif;
+}
+p{
+    margin: 15px , 0;
+    font-size: 15px;
+    font-family: Verdana,sans-serif;
+}
+
+
+
 .inp{
-      width: 100%;
-      margin: 10px;
-      padding: 10px;
+    padding: 8px;
+    margin: 16px 0px;
+    width: 100%;
+}
+
+.btn{
+
+     margin: 16px 0px;
+     padding: 8px 16px;
+     font: 15px;
+     color: #fff;
+     background: #000;
+}
+footer{
+     background-color: #000;
+      padding: 16px 0px;
+      text-align: center;
+      color: #fff;
 }
