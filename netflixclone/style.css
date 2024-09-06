@@ -124,7 +124,8 @@ input.checkbox{
        text-decoration: none;
 }
 
-footer{
+
+.footer{
       width: 100%;
       margin-left: 0;
       margin-bottom: 0;
@@ -132,14 +133,56 @@ footer{
       height: 550px;
       background-color: black;
 }
-.footer{
-      padding: 200px;
-}
-.contact p{
-       color: rgb(171, 165, 165);
+
+
+.footer-content{
+
+        padding-top: 200px;
+        padding-left: 50px;
+        
 }
 
-.links{
-      display: grid;
-      
+.contact p {
+
+      color: rgb(140, 142, 145);
+      margin-bottom: 30px;
 }
+
+
+
+.link1{
+      display: grid;
+      grid-template-columns: 300px 300px 300px 300px;
+}
+
+.link1 a{
+      color: rgb(112, 113, 114);
+
+}
+
+
+.link2{
+      margin-top: 30px;
+      display: grid;
+      grid-template-columns: 300px 300px;
+
+}
+
+.link2 a{
+      color: rgb(122, 119, 119);
+}
+
+.lang select {
+      margin-top: 20px;
+      background-color: black;
+      border-radius: 5px;
+      padding: 8px 18px;
+
+}
+
+.lang select option{
+      padding-right: 20px;
+}
+
+
+
