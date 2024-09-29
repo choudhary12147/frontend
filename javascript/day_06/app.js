@@ -94,7 +94,148 @@ console.log(conc(arr));
 /**
  * 
  *   scope of function -> scope determines the accessibility  of variables , objects and functions from different parts
- *   of the code.
+ *                       of the code.
+ *   
+ *   1. function scope  -> variable definded inside a function are not accessible(visible) from outside the function
+ *   2. block  scope ->  variable declare inside a block cant't we accessed from outside the block{}
+ *   3. lexical scope -> variable defined outside a function can be accessible inside another function defined after the variable
+ *                        but opposite is not accessible
  *  
  */
 
+
+//  let sum = 0;  // it have global scope we use this every where in any function
+
+
+function addnum(a,b) {
+     let sum = a+b;  // we use this sum varibale only in this func.
+   
+    //  console.log(sum);  // this sum print the value of func sum not from outside  and if there is no variable of sum inside this func 
+                    // global scope sum is print
+    
+    }
+
+addnum(1,2);
+
+
+
+// example of block scope
+
+let age = 25;
+
+if (age >= 18) {
+      let str = "adult";
+}
+
+// console.log(str);  // can't print the value of str because it have the block scope
+
+
+// example lexical scope
+
+
+function outer() {
+    
+let name = "sunil";
+
+function inner() {
+      
+      console.log(name);
+    //   console.log(surname);  // cant' we accessible because surname declare after the inner func.
+      
+}
+   inner();
+
+
+  let surname = "dhayal";
+}
+
+outer();
+
+
+// function expression  -> it is just a another way right a function
+// after that we pass this func as a arrgument and return
+
+
+// example of function expression
+
+ let hello =  function () {
+        
+     console.log("hello g");
+ }
+
+ hello();
+
+
+ //  higher order function  -> take one or multiple function as a arguments
+
+
+ function multipleGreet(func , n ) {
+     
+    for (let i = 0; i <= n; i++) {
+       
+           func();
+        
+    }
+
+ }
+
+ let greet =  function() {
+      console.log("namaste");
+ }
+
+ multipleGreet(greet,5);
+
+
+
+ // higher order function  returns a function
+
+
+
+ function oddevenfac(request) {
+    
+        if (request == "odd") {
+                    
+           let odd = function (n) {
+              console.log(!(n%2 == 0));
+           }
+
+           return odd;
+
+        } else if(request == "even") {
+               
+            let even = function (n) {
+                  console.log(n%2 == 0);
+            }
+               
+            return even;
+
+        }else{
+              console.log("wrong request");
+        }
+
+ }
+
+
+ let func = oddevenfac("odd");     // oddevenfac return func according to the request and store in func
+
+ func(5); // it func accor. to func which is in the oddevenfac
+
+
+ // action that can be performed on object
+
+
+let calculator = {
+
+   add: function add(a,b) {
+        return a+b;
+   },
+   sub: function sub(a,b) {
+       return a-b;
+   },
+   mul: function mul(a,b) {
+       return a*b;
+   }
+
+};
+
+console.log(calculator.add(4,5));
