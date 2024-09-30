@@ -271,3 +271,62 @@ let array = [8,9,10,11,25];
 
 console.log(element(num,array));
 
+
+/**
+ *   Qs2. Write a JavaScript function to extract unique characters from a string.
+          Example: str = “abcdabcdefgggh” ans = “abcdefgh”
+ */
+
+
+          let str = "abcdabcdefgggh";
+
+
+          function uniquechar(str) {
+               
+               let ans = "";
+
+               for (let i = 0; i < str.length; i++) {
+                
+                  let currstr = str[i];
+
+                  if (ans.indexOf(currstr) == -1) {
+                         
+                    ans += currstr;
+                  }
+                       
+               }
+
+               return ans;
+
+          }
+
+          console.log(uniquechar(str));
+
+
+          let country = ["Australia","Germany","united states of america"];
+
+
+          function longcountryname( country ) {
+
+              let max = 0;
+
+              let length = 0;
+
+              
+                      for (let i = 0; i < country.length; i++) {
+                         
+                        if (country[i].length > max) {
+                             
+                                length = i;
+
+                                max = country[i];
+
+                        }
+                        
+                      }
+
+                      return country[length];
+
+          }
+
+          console.log(longcountryname(country));
