@@ -239,3 +239,35 @@ let calculator = {
 };
 
 console.log(calculator.add(4,5));
+
+
+
+
+/**
+ *  Qs1. Write a JavaScript function that returns array elements larger than a number.
+ */
+
+
+function element(num , array) {
+
+  let newarr = []; 
+     
+    for (let i = 0; i < array.length; i++) {
+             
+        if (array[i] > num) {
+             
+             newarr.push(array[i]);
+        }
+            
+    }
+
+    return newarr;
+
+}
+
+let num = 5;
+
+let array = [8,9,10,11,25];
+
+console.log(element(num,array));
+
