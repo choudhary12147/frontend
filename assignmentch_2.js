@@ -309,3 +309,121 @@ console.log( makeSandwich(undefined,"chess"));
      }
 
      console.log(buildTeam("sunil","amit","rahul","suman"));
+
+     /**
+      Create a function discountPrice that takes two positional arguments: price and discountPercentage.
+       If no discount is provided, it should default to 10%.
+      */
+
+       function discountPrice(price,discountPercentage = 10) {
+          
+                    let finalprice =      price -  (discountPercentage*price)/100; 
+
+                    return finalprice;
+       }
+
+       /**
+      Write a function describePet that accepts two arguments: petName and petType.
+       If no petType is provided, it should default to "dog".
+        */
+
+       function describePet(petName = "dog",petType) {
+               console.log(`petname is ${petName} and petType is ${petType}`);
+       }
+
+       /**
+        Create a function calculateArea that accepts two arguments: length and width.
+         If width is not provided, it should default to the same value as length (for a square).
+        */
+
+         function calculateArea(length,width = length)  {
+              
+            return length*width;
+
+         }
+
+         console.log(calculateArea(4));
+
+
+
+         /**
+          Write a function joinStrings that accepts an unknown number of strings using the rest operator 
+          and returns them concatenated into one string.
+          */
+
+
+          function joinStrings(...strings) {
+
+        
+            return strings.join(' ');
+            
+          }
+
+          console.log(joinStrings("i","am","sunil","dhayal"));
+
+          /**
+           Create a function createUserProfile that accepts three arguments: name, email, and role.
+            If no role is provided, it should default to "user
+           */
+
+            function createUserProfile(name,email,role = "user") {
+                        console.log(`${name},${email},${role}`);
+            }
+
+            /**
+             Write a function divideNumbers that takes two arguments: a and b, with b defaulting to 1 if not provided.
+             */
+
+
+             function divideNumbers(a,b = 1) {
+                console.log(`${a/b}`);
+             }
+
+             divideNumbers(9,3);
+
+             /**
+              Create a function combineArrays that accepts an unknown number of 
+              arrays using the rest operator and returns one combined array.
+              */
+
+              function combineArrays(...arrays) {
+
+               return arrays.join();
+                
+              }
+
+              console.log(combineArrays([2,3,4],[5,6,7]));
+
+              /**
+            Write a function introduceEmployee that takes two positional
+             arguments: employeeName and position, with position defaulting to "intern".
+               */
+
+             /**
+              Create a function findAverage that takes an unknown number of scores
+               using the rest operator and returns the average score.
+              */
+
+               function findAverage(...scores) {
+                   
+                   let sum = 0;
+                   for (const score of scores) {
+                       
+                      sum+=score;
+
+                   }
+
+                   return sum/scores.length;
+
+               }
+
+               console.log(findAverage(2,3,4));
+
+               /**
+                 Write a function buildCar that accepts three arguments: brand, model, and year.
+                 If no year is provided, it should default to the current year.
+                */
+
+                 function buildCar(brand,model,year = 2024) {
+                      console.log(`${brand},${model},${year}`);
+                 }
