@@ -68,3 +68,112 @@ function multiply(no1,no2,callback) {
 
 multiply(3,4,printpro);
 
+
+/**
+ * 
+ * Write a function divide that accepts two numbers and a callback to return the quotient.
+ */
+
+
+function rquotient(q){
+        console.log(q);
+}
+
+function divide(no1,no2,callback){
+    
+      let q = no1/no2;
+
+      callback(q);
+
+}
+
+
+divide(10,5,rquotient);
+
+
+
+
+/**
+ * Create a function fizzBuzz that takes a number and a callback to print "Fizz" for multiples of 3,
+ *  "Buzz" for multiples of 5, and "FizzBuzz" for multiples of both
+  */
+
+
+function print(number) {
+    
+    if (number%3 == 0) {
+         console.log("Fizz");
+    }else if (number%5 == 0) {
+        console.log("Buzz");
+    }else{
+        console.log("FizzBuzz");
+    }
+
+}
+
+function fizzBuzz(number,callback){
+
+       callback(number);    
+
+}
+
+fizzBuzz(35,print);
+
+
+
+
+
+/**
+ * Create a function isPrime that takes a number and a callback to check if it is a prime number.
+ */
+
+
+
+
+function check(num) {
+      if (num%2 == 0) {
+         
+        console.log("prime");
+
+      } else {
+        console.log("not prime");
+      }
+}
+
+
+function isPrime(num , callback) {
+      callback(num);
+}
+
+
+isPrime(12,check);
+
+
+
+
+/**
+ * Implement a function findFactorial that takes a number and a callback to return its factorial.
+ */
+
+function factorial(num) {
+
+       if (num >= 1) {
+        
+        return num*factorial(num-1);
+       
+       }else{
+         return 1;
+       }
+       
+       
+
+}
+
+
+
+function findFactorial(number , callback) {
+              let fact =   callback(number);
+              console.log(fact);
+}
+
+findFactorial(4,factorial);
