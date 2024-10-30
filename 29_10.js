@@ -51,3 +51,26 @@ let days  = ["sumit","sukh","amit","anil"];
 console.log(days.sort());
 
 console.log(days);
+
+let arr1 = [1,2,3,4];
+
+let arr2 = [1,3,5,4];
+
+
+console.log(arr1[0] === arr2[0]);  
+
+arr2[1] = 2;
+arr2[2] = 3;
+
+console.log(arr2);
+console.log([1]==[1]);  // return false
+
+const arr3 = [1,2,3];
+
+arr3.push(4);
+
+arr3.pop();
+arr3.pop();
+console.log(arr3);
+
+
