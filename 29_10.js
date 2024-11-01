@@ -73,4 +73,34 @@ arr3.pop();
 arr3.pop();
 console.log(arr3);
 
+// arr3 = [5,6,7];
+
+// console.log(arr3);
+
+
+
+const obj = {
+      name:"sunil",
+      age:23,
+      cgpa:7.6
+
+}
+
+obj.name = "amit";
+
+console.log(obj);
+
+
+// obj = {
+//     name:"rahul",
+//     age:24,
+//     cgpa:8.9
+// }
+// console.log(obj);
+
+
+
+console.log(obj.name);
+
+
 
