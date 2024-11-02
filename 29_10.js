@@ -101,6 +101,76 @@ console.log(obj);
 
 
 console.log(obj.name);
+console.log(obj["name"]);
 
 
 
+
+// closer  -> variable bind or map  with the inner function  not copy the require data only share reference
+
+function outer() {
+        
+      let name = "sunil";
+
+      function inner() {
+         
+          console.log(name);
+      }
+
+      return inner;
+
+}
+
+let inner = outer();
+
+inner();
+
+
+/// function expression
+
+
+// const variable =  function(a,b) {
+//         return a+b;
+// }
+
+
+// variable(3,4);
+
+
+ const object = {
+
+      add: function (a,b) {
+             return a+b;
+      } ,
+      sub: function (a,b) {
+            return a-b;
+      }
+           
+
+ }
+
+
+   let ans  = object.add(3,4);
+
+   console.log(ans);
+
+
+   const info = {
+
+       name:"sunil",
+       age:23,
+       getval: function () {
+              console.log(`${this.name} and ${this.age}`);
+       },
+
+       getvalue (){
+            console.log(`${this.name}`);
+       }
+
+   }
+
+
+   info.getval();
+
+   info.getvalue();
+   
