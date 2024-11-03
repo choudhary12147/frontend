@@ -72,23 +72,30 @@ shadow();
 
 //Q.8
 
-// function outerFunc() {
-//     let count = 0;
-//     return {
-//       increment: function() {
-//         count++;
-//         console.log(count);
-//       },
-//       decrement: function() {
-//         count--;
-//         console.log(count);
-//       }
-//     };
-//   }
+
+
+function outerFunc() {
+  let count = 0;
   
-//   let counter = outerFunc();
-//   counter.increment();
-//   counter.decrement();
+  return {
+    increment: function() {
+      count++;
+      console.log(count);
+    },
+    decrement: function() {
+      count--;
+      console.log(count);
+    }
+  };
+}
+
+let counter = outerFunc();
+
+counter.increment;
+
+counter.decrement;
+
+  
 
 
   //Q.9

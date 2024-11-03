@@ -1,3 +1,16 @@
+
+/**
+ * 
+ * operator precedence is such equal to c++ only differce 
+ * in power operator that is '**' and if more than 1 power than
+ * its associativity is from right to left
+ */
+
+
+
+
+
+
 /**  
  *    data type in javascript
  *  1. number 

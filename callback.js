@@ -155,6 +155,8 @@ isPrime(12,check);
  * Implement a function findFactorial that takes a number and a callback to return its factorial.
  */
 
+
+
 function factorial(num) {
 
        if (num >= 1) {

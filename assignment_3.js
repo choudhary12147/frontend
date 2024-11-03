@@ -148,4 +148,78 @@ console.log(calculateArea(7));
 console.log(calculateArea());
 
 
-//13
+
+
+
+//  call back function
+
+
+
+
+
+function greeting(name) {
+        console.log("hello, " + name + "!");
+}
+
+function processuserinput(callback) {
+      let name = "sunil";
+      console.log(callback);
+      callback(name);
+}
+
+processuserinput(greeting);
+
+
+
+
+// arrow function
+
+const sum1 = ( a, b)=> {
+           return a+b;
+}
+
+
+ let s = sum1(3,4);
+
+ console.log(s);
+
+
+ //  implicit  arrow function
+
+ const sum2 = (a,b) => (a+b);
+
+ let ans =  sum2(3,4);
+
+ console.log(ans);
+
+
+
+ // set timeout
+
+
+ setTimeout(() => {
+      console.log("print after 9 second");
+ }, 9000);
+
+
+ // set interval -> print after every 2 second
+
+
+//  setInterval(() => {
+//            console.log("print in interval");
+//  }, 2000);
+
+
+ const student = {
+    
+    name:"sunil",
+    age:23,
+    prop:this,
+    getName(){
+          console.log(this);
+          console.log(this.name);
+    }
+
+ }
+
+student.getName();
