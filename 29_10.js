@@ -4,38 +4,38 @@ let arr = ["sunil" , 23 , 35.5];
 
 arr.unshift("amit");
 
-console.log(arr);
+// console.log(arr);
 
 
 arr.shift();
 
-console.log(arr);
+// console.log(arr);
 
 arr.push("rahul");
 
-console.log(arr);
+// console.log(arr);
 
 arr.pop(arr);
-console.log(arr);
+// console.log(arr);
 
 let primary = [ "sunil " , "rahul" , "amit" , "anil"];
 
 let secondary = ["vikas" , "sonu" , "rohit"];
 
-console.log(primary.concat(secondary));
+// console.log(primary.concat(secondary));
 
 
-console.log(primary);
+// console.log(primary);
 
-console.log(secondary);
+// console.log(secondary);
 
-primary.reverse();
+// primary.reverse();
 
-console.log(primary);
+// console.log(primary);
 
-primary.slice(1,2);
+// primary.slice(1,2);
 
-console.log(primary);
+// console.log(primary);
 
 primary.splice(1,2);
 
