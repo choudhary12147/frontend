@@ -25,4 +25,31 @@ console.log(new1);
 new1.style.color = 'red';
 
 
+// classList
+
+let heading  =  document.querySelector("h1");
+
+heading.classList.add("newclass");
+
+console.log(heading.classList);
+
+
+let newp = document.createElement("p");
+
+newp.innerText = "hii, i am new para";
+
+let body = document.querySelector("body");
+
+body.appendChild(newp);  // add at the last
+
+// add the starting
+
+let newh = document.createElement("h1");
+
+newh.innerText = "add new element at starting";
+
+body.prepend(newh);
+
+// insert at define location
+
 
