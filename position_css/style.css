@@ -1,0 +1,55 @@
+section{
+     position: relative;
+     top: 200px;
+    
+}
+
+div{
+     width: 100px;
+     height: 100px;
+     background-color: green;
+     display: inline-block;
+     border: 3px solid black;
+     top: 100px;
+
+
+}
+
+/*
+ relative -> relative to itself that is the past position of that element and left a space so that no new element come there
+*/
+
+/* .demo{
+    background-color: yellow;
+    position: relative;
+    top: 100px;
+    left: 300px;
+} */
+
+/*  
+  absolute -> take offset from the ancestor if any otherwise it is placed relative to the initial containing block
+              and no space is left
+*/
+/* 
+.demo{
+    background-color: yellow;
+    position: absolute;
+    top:100px;
+    left:300px;
+} */
+
+
+/*
+  fixed  ->  it position relative to the  initial containing block that is body and no space is left
+*/
+
+/* .demo{
+    background-color: yellow;
+    position: fixed;
+    top: 100px;
+    left: 400px;
+} */
+
+/*
+  sticky
+*/
