@@ -204,3 +204,25 @@ const users = [
 
 // console.log(pa);
 // pa.talk();
+
+
+
+// classes in js
+
+class Person {
+ 
+    constructor(name,age){
+          this.name = name;
+          this.age = age; 
+    }
+   
+      talk() {
+        console.log(`i am talking ${this.name}`)
+    }
+
+
+}
+
+let p1 = new Person("sunil",23);
+
+console.log(p1);
