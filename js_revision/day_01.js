@@ -175,7 +175,7 @@ const users = [
 
 
 
- // new operator
+ //3. new operator
 
  // the new operator
  // constructor -> doesn't return anything & start with capital
@@ -207,22 +207,66 @@ const users = [
 
 
 
-// classes in js
+//4. classes in js
 
-class Person {
+
+
+// class Person {
  
-    constructor(name,age){
-          this.name = name;
-          this.age = age; 
-    }
+//     constructor(name,age){
+//           this.name = name;
+//           this.age = age; 
+//     }
    
-      talk() {
-        console.log(`i am talking ${this.name}`)
-    }
+//       talk() {
+//         console.log(`i am talking ${this.name}`)
+//     }
 
+
+// }
+
+// let p1 = new Person("sunil",23);
+
+// console.log(p1);
+
+
+
+//5. inheritance
+
+
+
+class Person{
+
+   constructor(name,age){
+      this.name = name;
+      this.age = age;
+   }
+
+   talk(){
+      console.log(`hello i am ${this.name}`);
+   }
 
 }
 
-let p1 = new Person("sunil",23);
 
-console.log(p1);
+
+class Teacher extends Person {
+    
+      constructor(name,age,subject){
+          super(name,age);
+          this.subject =  subject;
+      }
+      
+}
+
+class Student extends Person{
+
+    constructor(name,age,marks){
+        super(name,age);
+        this.marks = marks;
+    }
+}
+
+let s1 = new Student("sunil",23,93);
+
+console.log(s1);
